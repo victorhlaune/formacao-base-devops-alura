@@ -15,52 +15,54 @@
 
 ```shell
 usuario@servidor:~$ sudo apt update 
-    # sudo: executar tarefa como admin; 
-    # apt: gerenciador de pacotes; 
-    # update: verificar o que tem para atualizar;
+    # sudo   : executa tarefa como admin; 
+    # apt    : eh gerenciador de pacotes; 
+    # update : verifica o que tem para atualizar;
 
 usuario@servidor:~$ help 
-    # lista comandos Shell
+    # lista comandos Shell;
 
-usuario@servidor:~$ ls  
-    # lista tudo que está nos diretórios
-
-usuario@servidor:~$ ls -a 
-    # lista todos os arquivos + ocultos no diretório
+usuario@servidor:~$ ls -a
+    # ls : lista o que está nos diretórios;
+    # -a : lista também o que está anônimo;
 
 usuario@servidor:~$ pwd 
-    # responde em que diretório estamos
+    # apresenta o diretorio que estamos
 
 usuario@servidor:~$ mkdir <nome-do-diretorio> 
-    # cria um diretório na pasta em que estamos com o nome passado
+    # cria um diretório
 
-usuario@servidor:~$ cd <nome-do-diretorio> 
-    # cd == change directory e avança para o diretório
+usuario@servidor:~$ cd
+    # cd             : change directory
+    # só cd          : volta para a home
+    # cd <diretorio> : avanca para o diretorio digitado
+    # cd ..          : volta para o diretorio anterior
 
-usuario@servidor:~$ cd 
-    # Por default só o cd volta para o home
+usuario@servidor:~$ touch aquivo.txt
+    # cria um arquivo.txt
 
-usuario@servidor:~$ touch <nome-do-arquivo> 
-    # Cria o arquivo
-
-usuario@servidor:~$ cat > <nome-do-arquivo> 
+usuario@servidor:~$ cat > arquivo.txt 
     # Adicionando valor ao arquivo
-    <Digite o texto aqui> # Digita o texto que quer inserir no arquivo; Para sair da escrita: CRTL + D
+    <Digite o texto aqui> 
+    # Digita o texto que quer inserir no arquivo; 
+    # Para sair da escrita: CRTL + D
 
-usuario@servidor:~$ cat <nome-do-arquivo> 
+usuario@servidor:~$ cat arquivo.txt
     # Faz a leitura do arquivo
 
 usuario@servidor:~$ echo <mensagem> 
-    # Exibe a mensagem 
+    # Exibe a mensagem na CLI
 
 usuario@servidor:~$ echo <texto> > <nome-do-arquivo> 
-    # Inserir o texto ao arquivo
+    # Insere o texto ao arquivo
 
-usuario@servidor:~$ mv <arquivo> <diretorio> 
+usuario@servidor:~$ mv <arquivo> <diretorio>
     # para mover o arquivo para outro diretório
 
 usuario@servidor:~$ tar -czf <nome-do-arquivo>.tar.gz <arquivos-que-quero-compactar> 
-    # c==criar z==zip f==file(nome-do-arquivo)
+    # c==criar 
+    # z==zip 
+    # f==file (nome-do-arquivo)
 	# exemplo: tar -czf compactado.tar.gz arquivo_1.txt arquivo_2.txt
 
 usuario@servidor:~$ rm <arquivo> 
