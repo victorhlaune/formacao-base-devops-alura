@@ -1,0 +1,1 @@
+# Anotacoes do curso da alura: "DevOps: explorando conceitos, comandos e scripts no Linux CLI"
